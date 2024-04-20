@@ -34,7 +34,10 @@
     },
   "addons": [
     {
-      "plan": "rediscloud"
+      "plan": "rediscloud",
+      "options" : {
+        "maxmemory-policy": "allkeys-lru",
+        "maxmemory-redis": "1GB"
     }
   ],
   "buildpacks": [
