@@ -14,21 +14,19 @@ from telethon.errors import (
 from . import LOG_CHANNEL, LOGS, Button, asst, kazu_cmd, eor, get_string
 
 REPOMSG = """
-◈ **ᴋᴀᴢᴜ ᴜʙᴏᴛ​** ◈\n
-◈ Repo - [Click Here](https://github.com/ionmusic/Kazu-Ubot)
-◈ Addons - [Click Here](https://github.com/ionmusic/addons)
-◈ Support - @kazusupportgrp
+◈ **ᴋᴀɴᴇ ᴜʙᴏᴛ​** ◈\n
+◈ Repo - [Click Here](https://github.com/kaneepep/Kane-Ubot)
+◈ Support - @ucelbotk
 """
 
 RP_BUTTONS = [
     [
-        Button.url(get_string("bot_3"), "https://github.com/ionmusic/Kazu-Ubot"),
-        Button.url("Addons", "https://github.com/ionmusic/Addons"),
+        Button.url(get_string("bot_3"), "https://github.com/kaneepep/Kane-Ubot"),
+        Button.url("Support Group", "t.me/ucelbotk")
     ],
-    [Button.url("Support Group", "t.me/kazusupportgrp")],
 ]
 
-KAZUSTRING = """🎇 **Thanks for Deploying ᴋᴀᴢᴜ ᴜʙᴏᴛ!**
+KAZUSTRING = """🎇 **Thanks for Deploying ᴋᴀɴᴇ ᴜʙᴏᴛ!**
 
 • Here, are the Some Basic stuff from, where you can Know, about its Usage."""
 
@@ -53,13 +51,13 @@ async def repify(e):
     await e.eor(REPOMSG)
 
 
-@kazu_cmd(pattern="kazu$")
+@kazu_cmd(pattern="kane$")
 async def useAyra(rs):
     button = Button.inline("Start >>", "initft_2")
     msg = await asst.send_message(
         LOG_CHANNEL,
         KAZUSTRING,
-        file="https://telegra.ph/file/e2f568b76280fadc8ee54.jpg",
+        file="https://graph.org/file/bdc2cebe43bb32d2a43aa.jpg",
         buttons=button,
     )
     if not (rs.chat_id == LOG_CHANNEL and rs.client._bot):
