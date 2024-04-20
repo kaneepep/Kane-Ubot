@@ -32,14 +32,14 @@ from . import _kazu_cache
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/ionmusic/Kazu-Ubot"),
-        Button.url("• Support •", url="t.me/kazusupportgrp"),
+        Button.url("• Repo •", url="https://github.com/kaneepep/Kane-Ubot"),
+        Button.url("• Support •", url="t.me/ucelbotk"),
     ],
 ]
 
 ofox = "https://graph.org/file/231f0049fcd722824f13b.jpg"
 gugirl = "https://graph.org/file/0df54ae4541abca96aa11.jpg"
-kazupic = "https://graph.org//file/d854abd533a783c6642b1.jpg"
+kazupic = "https://graph.org/file/bdc2cebe43bb32d2a43aa.jpg"
 
 apis = [
     "QUl6YVN5QXlEQnNZM1dSdEI1WVBDNmFCX3c4SkF5NlpkWE5jNkZV",
@@ -169,14 +169,14 @@ async def _(e):
 async def repo(e):
     res = [
         await e.builder.article(
-            title="Kazu Ubot",
+            title="Kane Ubot",
             description="Ubot | Telethon",
             thumb=wb(kazupic, 0, "image/jpeg", []),
-            text="**◈ ᴋᴀᴢᴜ ᴜʙᴏᴛ​ ◈**",
+            text="**◈ ᴋᴀɴᴇ ᴜʙᴏᴛ​ ◈**",
             buttons=SUP_BUTTONS,
         ),
     ]
-    await e.answer(res, switch_pm="Kazu Repo.", switch_pm_param="start")
+    await e.answer(res, switch_pm="Kane Repo.", switch_pm_param="start")
 
 
 @in_pattern("go", owner=True)
