@@ -12,7 +12,7 @@ COPY installer.sh .
 RUN bash installer.sh
 
 # changing workdir
-WORKDIR "/root/ionmusic"
+WORKDIR "/root/kaneepep"
 
 # start the bot.
 CMD ["bash", "startup"]
