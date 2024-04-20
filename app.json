@@ -37,7 +37,7 @@
       "plan": "rediscloud",
       "options": {
         "maxmemory-policy": "allkeys-lru",
-        "maxmemory-redis": "2GB"
+        "maxmemory-redis": "1GB"
       }
     }
   ],
