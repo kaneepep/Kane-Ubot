@@ -52,21 +52,21 @@ upage = 0
 
 SUP_BUTTONS = [
     [
-        Button.url("• Repo •", url="https://github.com/ionmusic/Kazu-Ubot"),
-        Button.url("• Support •", url="t.me/kazusupportgrp"),
+        Button.url("• Repo •", url="https://github.com/kaneepep/Kane-Ubot"),
+        Button.url("• Support •", url="t.me/ucelbotk"),
     ],
 ]
 
 # --------------------BUTTONS--------------------#
 
 
-@in_pattern("kazu", owner=True)
+@in_pattern("kane", owner=True)
 async def inline_handler(event):
     z = []
     for x in LIST.values():
         z.extend(x)
     text = get_string("inline_4").format(
-        kazu,
+        kane,
         len(HELP.get("Official", [])),
         len(HELP.get("Addons", [])),
         len(z),
@@ -80,7 +80,7 @@ async def inline_handler(event):
         )
     else:
         result = await event.builder.article(
-            title="Kazu Help Menu", text=text, buttons=_main_help_menu
+            title="Kane Help Menu", text=text, buttons=_main_help_menu
         )
     await event.answer([result], private=False, cache_time=300, gallery=True)
 
@@ -371,9 +371,9 @@ async def ibuild(e):
                     results = [
                         await builder.document(
                             _pic,
-                            title="Kazu Op",
+                            title="Kane Op",
                             text=txt,
-                            description="@DisiniKazu",
+                            description="@snipple",
                             buttons=btn,
                             link_preview=False,
                         )
@@ -386,10 +386,10 @@ async def ibuild(e):
                     cont = InputWebDocument(pic, 0, mime_type, [])
                 results = [
                     await builder.article(
-                        title="Kazu Op",
+                        title="Kane Op",
                         type=_type,
                         text=txt,
-                        description="@DisiniKazu",
+                        description="@snipple",
                         include_media=include_media,
                         buttons=btn,
                         thumb=cont,
