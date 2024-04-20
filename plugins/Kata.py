@@ -51,13 +51,13 @@ from . import (
     kazu_cmd,
 )
 
-@kazu_cmd(pattern="zu$")
+@kazu_cmd(pattern="ne$")
 async def _(event):
     xx = await event.eor("Aku")
     sleep(3)
     await xx.edit("Cuma Mau Bilang")
     sleep(2)
-    await xx.edit("Kalo Bang Kazu ...")
+    await xx.edit("Kalo Bang Kane ...")
     sleep(1)
     await xx.edit("Ganteng Banget")
 
@@ -130,14 +130,6 @@ async def _(event):
     await event.delete()
 
     
-@kazu_cmd(pattern="ra$")
-async def _(event):
-    await event.client.send_message(
-        event.chat_id,
-        "◈ ʌʏꝛᴀ ꭙ ᴜꜱᴇꝛʙᴏᴛ​ ᴀᴄᴛɪᴠᴇᴅ ◈",
-        reply_to=event.reply_to_msg_id,
-    )
-    
 @kazu_cmd(pattern="riz$")
 async def _(event):
     await event.client.send_message(
@@ -207,16 +199,6 @@ async def _(event):
     await event.client.send_message(
         event.chat_id,
         "CUIHHHH, MAKAN AJA MASIH NGEMIS LO GOBLOK, JANGAN SO NINGGI YA KONTOL GA KEREN LU KEK GITU GOBLOK!!",
-        reply_to=event.reply_to_msg_id,
-    )
-    await event.delete()
-
-
-@kazu_cmd(pattern="quen$")
-async def _(event):
-    await event.client.send_message(
-        event.chat_id,
-        "Queen Mau Bilang Bang Riz Ganteng",
         reply_to=event.reply_to_msg_id,
     )
     await event.delete()
