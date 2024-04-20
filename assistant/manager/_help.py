@@ -14,7 +14,7 @@ START = """
 ✘  /help : Get This Message.
 ✘  /repo : Get Bot's Repo..
 
-🧑‍💻 Join **@kazusupportgrp**
+🧑‍💻 Join **@ucelbotk**
 """
 
 ADMINTOOLS = """✘ **AdminTools** ✘
