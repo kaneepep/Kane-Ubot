@@ -21,10 +21,10 @@ from . import append_or_update, owner_and_sudos
 OWNER = kazu_bot.full_name
 
 MSG = f"""
-**ᴋᴀᴢᴜ ᴜʙᴏᴛ​**
+**ᴋᴀɴᴇ ᴜʙᴏᴛ​**
 ➖➖➖➖➖➖➖➖➖➖
 **Owner**: [{OWNER}](tg://user?id={kazu_bot.uid})
-**Support**: @kazusupportgrp
+**Support**: @ucelbotk
 ➖➖➖➖➖➖➖➖➖➖
 """
 
@@ -32,9 +32,9 @@ IN_BTTS = [
     [
         Button.url(
             "Repository",
-            url="https://github.com/ionmusic/Kazu-Ubot",
+            url="https://github.com/kaneepep/Kane-Ubot",
         ),
-        Button.url("Support", url="https://t.me/kazusupportgrp"),
+        Button.url("Support", url="https://t.me/ucelbotk"),
     ]
 ]
 
@@ -91,9 +91,9 @@ def in_pattern(pattern=None, owner=False, **kwargs):
             if owner and event.sender_id not in owner_and_sudos():
                 res = [
                     await event.builder.article(
-                        title="ᴋᴀᴢᴜ ᴜʙᴏᴛ​",
-                        url="https://t.me/kazusupportgrp​",
-                        description="© ᴋᴀᴢᴜ ᴜʙᴏᴛ",
+                        title="ᴋᴀɴᴇ ᴜʙᴏᴛ​",
+                        url="https://t.me/ucelbotk​",
+                        description="© ᴋᴀɴᴇ ᴜʙᴏᴛ",
                         text=MSG,
                         thumb=InputWebDocument(
                             "https://graph.org//file/d854abd533a783c6642b1.jpg",
@@ -127,7 +127,7 @@ def in_pattern(pattern=None, owner=False, **kwargs):
                                 title="Unhandled Exception has Occured!",
                                 text=error_text(),
                                 buttons=Button.url(
-                                    "Report", "https://t.me/kazusupportgrp"
+                                    "Report", "https://t.me/ucelbotk"
                                 ),
                             )
                         ]
