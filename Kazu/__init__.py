@@ -94,7 +94,7 @@ if sys.argv[0] == "-m":
     DUAL_HNDLR = udB.get_key("DUAL_HNDLR") or "/"
     SUDO_HNDLR = udB.get_key("SUDO_HNDLR") or "NO_HNDLR"
 else:
-    print("Kazu 2022 © Kazu-Ubot")
+    print("© Kane-Ubot")
 
     from logging import getLogger
 
